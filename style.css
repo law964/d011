@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Passion" ;
+    src: url(fonts/Passion_One/PassionOne-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Sriracha";
+    src: url(fonts/Sriracha/Sriracha-Regular.ttf);
+}
+
+:root {
+    --fontp: "Passion", cursive; 
+    --fonts: "Sriracha", cursive;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    /* centralizar */
+    justify-content: center;
+    align-items: center;
+    /* deixar em coluna */
+    flex-direction: column;
+    background-color: black;
+    height: 250px;
+    color: white;
+}
+
+header h1 {
+    font-family: var(--fontp);
+    font-size: 6em;
+}
+
+header p, a {
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    max-height:800px;
+    max-width: 100%;
+}
+
+.parte1 p {
+    font-family: var(--fonts);
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.213);
+    padding: 10px;
+}
+/* parte 1 do cordel */
+.parte1 {
+    display: flex;
+    /* alinha horizontalmente */
+    align-items: center;
+    padding: 20px;
+    background-color: aqua;
+}
+
+/* parte 2 do cordel */
+.parte2 {
+    background-color: bisque;
+}
